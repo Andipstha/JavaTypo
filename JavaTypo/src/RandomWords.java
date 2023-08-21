@@ -216,7 +216,6 @@ public class RandomWords extends JPanel {
                 wordField.setForeground(Color.red);
                 wrongCount++;
             }
-
             //ACCURACY CALCULATION
             accuracy = ((double) correctPressed /totalPressed)* 100;
             wordCountLabel.setText("WPM: " + wordCount + "     Accuracy: " + (accuracy < 0 ? 0 : String.format("%.0f", accuracy)) + "%");
